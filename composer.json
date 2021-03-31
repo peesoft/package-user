@@ -1,0 +1,25 @@
+{
+    "name": "testsoft/package-user",
+    "description": "User application",
+    "type": "project",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.4|^8.0",
+        "testsoft/package-interface": "dev-master@dev",
+        "testsoft/package-vitual-interface": "1.0.0"
+    },
+    "require-dev": {
+        "testsoft/package-test-support": "dev-master@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Testsofr\\PackageUser\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TestSoft\\PackageUser\\Tests": "tests"
+        }
+    }
+}
